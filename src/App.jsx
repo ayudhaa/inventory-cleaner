@@ -160,14 +160,14 @@ const App = () => {
       }`}
     >
       <Icon size={18} />
-      <span className="font-bold text-[10px] uppercase tracking-widest">{label}</span>
+      <span className="font-bold text-[10px] tracking-widest">{label}</span>
     </button>
   );
 
   if (appLoading) return (
     <div className="h-screen flex items-center justify-center bg-[#FDFCFB] flex-col gap-4">
       <Loader2 className="animate-spin text-stone-900" size={32} />
-      <p className="text-[10px] font-black tracking-[0.4em] uppercase text-stone-400">Syncing Cloud Database...</p>
+      <p className="text-[10px] font-black tracking-[0.4em] text-stone-400">Syncing Cloud Database...</p>
     </div>
   );
 
@@ -180,10 +180,10 @@ const App = () => {
             <div className={`w-12 h-12 ${storeConfig.logoColor} rounded-2xl flex items-center justify-center text-white mb-4 shadow-lg transition-all duration-700`}>
                 <Package size={24} />
             </div>
-            <h1 className="text-xl font-black text-stone-900 tracking-tighter italic uppercase transition-all duration-500">
+            <h1 className="text-xl font-black text-stone-900 tracking-tighter italic transition-all duration-500">
                 {storeConfig.name}
             </h1>
-            <p className="text-[8px] font-bold text-stone-300 tracking-[0.2em] uppercase mt-1 transition-all duration-500">
+            <p className="text-[8px] font-bold text-stone-300 tracking-[0.2em] mt-1 transition-all duration-500">
                 {storeConfig.tagline}
             </p>
         </div>
